@@ -24,7 +24,7 @@ for folder in folders:
         print(f"Folder {folder.name} has no export folder")
         continue
         
-    if os.path.isfile(exportDir + "\\Readme.md"): #if readme is present, pthos are internal
+    if os.path.isfile(exportDir + "\\Readme.md"): #if readme is present, photos are internal
         continue
 
     files = [x for x in os.scandir(exportDir) if x.is_file()]
